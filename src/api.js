@@ -15,6 +15,7 @@ module.exports = db => {
   }));
 
   router.post('/', wrapAsync(async function(req) {
+	  console.log(req.body);
     const book = new BookType(req.body);
     await db.collection('Book').insertOne(book);
     return { book };

@@ -1,4 +1,4 @@
 {
-  "mongodbUri": "mongodb://localhost:27017/prod",
+  "mongodbUri": "mongodb://mongo:27017/prod",
   "port": "80"
 }
